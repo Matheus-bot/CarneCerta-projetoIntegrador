@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # CarneCerta
 
 Aplicação desenvolvida como Projeto Integrador com o objetivo de auxiliar consumidores na escolha de carnes de acordo com o tipo de preparo desejado, apresentando informações organizadas sobre os cortes, recomendações e recursos de acessibilidade.
@@ -165,29 +163,45 @@ A aplicação será desenvolvida considerando tanto dispositivos móveis quanto 
 A organização do projeto seguirá uma estrutura modular, buscando separar interface, dados, navegação e serviços.
 
 ```text
-CarneCerta/
-│
+projetoapp/
 ├── assets/
-│   ├── images/
-│   ├── videos/
-│   └── fonts/
-│
-├── src/
-│   ├── components/
-│   ├── screens/
-│   ├── navigation/
-│   ├── services/
-│   ├── data/
-│   ├── utils/
-│   └── hooks/
-│
+│   ├── categorias/
+│   │   ├── churrasco/.gitkeep
+│   │   ├── panela/.gitkeep
+│   │   ├── moida/.gitkeep
+│   │   ├── fitness/.gitkeep
+│   │   ├── desfiar/.gitkeep
+│   │   └── bifes/.gitkeep
+│   └── carnes/
+│       ├── acem/.gitkeep
+│       ├── paleta/.gitkeep
+│       ├── musculo/.gitkeep
+│       └── picanha/.gitkeep
 ├── docs/
-│   ├── diagrams/
-│   └── documentation/
-│
-├── app.json
-├── package.json
-└── README.md
+│   └── DOCUMENTACAO.md
+└── src/
+    ├── app/                   
+    │   ├── _layout.tsx         
+    │   ├── index.tsx           
+    │   ├── cadastro.tsx        
+    │   └── principal.tsx       
+    ├── screens/                l
+    │   ├── LoginScreen.tsx
+    │   ├── CadastroScreen.tsx
+    │   └── PrincipalScreen.tsx
+    ├── components/             
+    │   ├── Button.tsx
+    │   ├── Input.tsx
+    │   ├── Header.tsx
+    │   ├── Banner.tsx
+    │   ├── CategoryCard.tsx
+    │   ├── MeatCard.tsx
+    │   └── AccessibilityCard.tsx
+    ├── data/                   
+    │   ├── categorias.ts
+    │   └── carnes.ts
+    └── constants/
+        └── cores.ts            paleta de cores única do app
 ```
 
 A estrutura poderá ser ajustada conforme as necessidades do desenvolvimento.
@@ -283,4 +297,3 @@ O CarneCerta encontra-se em fase de desenvolvimento e poderá receber ajustes de
 ## Licença
 
 Projeto desenvolvido para fins acadêmicos como parte de um Projeto Integrador.
->>>>>>> 3e3377560e0a85a15cb324f2c7fe8c24305dc565
