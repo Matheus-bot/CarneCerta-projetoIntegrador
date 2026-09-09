@@ -6,18 +6,21 @@ import { Button } from '@/components/Button';
 import { Input } from '@/components/Input';
 import { cores } from '@/constants/cores';
 
-export default function LoginScreen() {
+export default function CadastroScreen() {
   const router = useRouter();
+  const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const [confirmarSenha, setConfirmarSenha] = useState('');
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.conteudo}>
       <View style={styles.cabecalho}>
-        <Text style={styles.marca}>CARNE CERTA</Text>
+        <Text style={styles.titulo}>Criar conta</Text>
       </View>
 
       <View style={styles.formulario}>
+        <Input rotulo="Nome" valor={nome} aoAlterarTexto={setNome} placeholder="Seu nome" />
         <Input
           rotulo="E-mail"
           valor={email}
@@ -26,23 +29,24 @@ export default function LoginScreen() {
           keyboardType="email-address"
           autoCapitalize="none"
         />
+        <Input rotulo="Senha" valor={senha} aoAlterarTexto={setSenha} placeholder="Sua senha" senha />
         <Input
-          rotulo="Senha"
-          valor={senha}
-          aoAlterarTexto={setSenha}
-          placeholder="Sua senha"
+          rotulo="Confirmar senha"
+          valor={confirmarSenha}
+          aoAlterarTexto={setConfirmarSenha}
+          placeholder="Repita a senha"
           senha
         />
 
-        <Button titulo="ENTRAR" onPress={() => router.replace('/principal')} />
+        <Button titulo="CADASTRAR" onPress={() => router.replace('/')} />
 
         <Pressable
-          onPress={() => router.push('/cadastro')}
+          onPress={() => router.back()}
           accessibilityRole="button"
-          accessibilityLabel="Criar conta"
-          style={styles.linkCadastro}
+          accessibilityLabel="Voltar para o login"
+          style={styles.linkVoltar}
         >
-          <Text style={styles.textoLink}>Criar conta</Text>
+          <Text style={styles.textoLink}>Voltar</Text>
         </Pressable>
       </View>
     </ScrollView>
@@ -64,18 +68,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 32,
   },
-  marca: {
+  titulo: {
     color: cores.texto,
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: '800',
-    letterSpacing: 1,
   },
   formulario: {
     backgroundColor: cores.superficie,
     borderRadius: 16,
     padding: 20,
   },
-  linkCadastro: {
+  linkVoltar: {
     marginTop: 16,
     minHeight: 44,
     alignItems: 'center',

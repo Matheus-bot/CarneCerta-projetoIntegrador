@@ -1,18 +1,19 @@
 import { Stack } from 'expo-router';
 
+import { cores } from '@/constants/cores';
+
 export default function RootLayout() {
   return (
     <Stack
       screenOptions={{
         headerShown: false,
         animation: 'slide_from_right',
-        contentStyle: { backgroundColor: '#F7F3F0' },
+        contentStyle: { backgroundColor: cores.fundo },
       }}
     >
       <Stack.Screen name="index" />
-      <Stack.Screen name="home" />
-      <Stack.Screen name="categories" />
-      <Stack.Screen name="preferences" />
+      <Stack.Screen name="cadastro" />
+      <Stack.Screen name="principal" />
     </Stack>
   );
 }
