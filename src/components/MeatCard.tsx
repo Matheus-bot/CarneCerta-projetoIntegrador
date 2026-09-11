@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     width: '48%',
     minHeight: 44,
     marginBottom: 16,
+  
   },
   imagemWrap: {
     width: '100%',
