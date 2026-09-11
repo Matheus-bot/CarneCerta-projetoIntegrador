@@ -1,5 +1,6 @@
-# CarneCerta
-
+<p align="center">
+<img width="256" height="81" alt="image" src="https://github.com/user-attachments/assets/7a1e0f79-e938-4d65-8057-1a18c31be96d" />
+</p>
 Aplicação desenvolvida como Projeto Integrador com o objetivo de auxiliar consumidores na escolha de carnes de acordo com o tipo de preparo desejado, apresentando informações organizadas sobre os cortes, recomendações e recursos de acessibilidade.
 
 ## Sobre o projeto
