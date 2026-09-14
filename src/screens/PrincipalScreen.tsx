@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   listaCategorias: {
-    paddingBottom: 8,
+    paddingBottom: 80,
     marginBottom: 16,
   },
   grade: {

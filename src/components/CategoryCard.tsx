@@ -26,14 +26,14 @@ export function CategoryCard({ nome, imagem, onPress }: CategoryCardProps) {
 
 const styles = StyleSheet.create({
   container: {
-    width: 96,
+    width: 100,
     minHeight: 44,
     marginRight: 12,
     alignItems: 'center',
   },
   imagemWrap: {
-    width: 88,
-    height: 88,
+    width: 92,
+    height: 97,
     borderRadius: 16,
     backgroundColor: cores.superficie,
     overflow: 'hidden',
