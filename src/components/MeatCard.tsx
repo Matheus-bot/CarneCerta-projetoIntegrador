@@ -26,14 +26,14 @@ export function MeatCard({ nome, imagem, onPress }: MeatCardProps) {
 
 const styles = StyleSheet.create({
   container: {
-    width: '48%',
+    width: '30%',
     minHeight: 44,
     marginBottom: 16,
   
   },
   imagemWrap: {
-    width: '100%',
-    height: 110,
+    width: 85,
+    height: 100,
     borderRadius: 16,
     backgroundColor: cores.superficie,
     overflow: 'hidden',
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     height: '100%',
   },
   nome: {
-    marginTop: 8,
+    marginTop: 10,
     color: cores.texto,
     fontSize: 14,
     fontWeight: '600',

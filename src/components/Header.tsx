@@ -12,12 +12,13 @@ export function Header() {
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: 16,
+    paddingVertical: 22,
   },
   marca: {
     color: cores.texto,
     fontSize: 20,
     fontWeight: '800',
     letterSpacing: 1,
+    textAlign : 'center'
   },
 });

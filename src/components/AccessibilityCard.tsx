@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     lineHeight: 20,
   },
   espacoReservado: {
-    height: 100,
+    height: 180,
     borderRadius: 12,
     backgroundColor: cores.fundo,
     marginTop: 16,

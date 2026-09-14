@@ -9,7 +9,7 @@ export function Banner() {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    height: 160,
+    height: 130,
     borderRadius: 16,
     backgroundColor: cores.superficie,
     marginBottom: 24,
