@@ -8,7 +8,7 @@ type CategoryCardProps = {
   onPress?: () => void;
 };
 
-export function CategoryCard({ nome, imagem, onPress }: CategoryCardProps) {
+export function CategoryCard({nome, imagem, onPress }: CategoryCardProps) {
   return (
     <Pressable
       onPress={onPress}
